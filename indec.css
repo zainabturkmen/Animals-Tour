@@ -1,0 +1,204 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+
+.section-1{
+   background: linear-gradient(120deg, #FFEBCD 8.57%, #FF8B72 91.34%);
+   display: flex;
+   flex-direction: column;   
+   padding: 3em 0 3em 0;
+   align-items: center;
+
+}
+.section-1 h2{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.section-1 p{
+    margin-top: -0.5em;
+    font-size: 16px;
+    margin-bottom: 3em;
+    width: 270px;
+    font-weight: 400;
+}
+
+.section-1 .imgs{
+    width: 305px;
+    height: 233px;
+    padding-bottom: 1.5em;
+}
+
+.hide-imgs, .hidei-imgs{
+    display: none;
+}
+
+/* .section-2, .section-3, .section-4{ */
+
+    main {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .section-2 h1, .section-3 h1, .section-4 h1{ */
+    main div h1{
+    font-family: "Nunito";
+    font-size: 32px;
+    font-weight: 900;
+}
+
+/* .section-2 p, .section-3 p, .section-4 p{ */
+    main div p{
+    width: 250px;
+    text-align: center;
+    margin-top: 0em;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: -1em;
+    padding-bottom: 4em;
+}
+
+@media screen and (min-width: 834px) {
+
+    body{
+        padding: 0;
+    }
+
+    .section-1{
+        background: linear-gradient(120deg, #FFEBCD 8.57%, #FF8B72 91.34%);
+        display: flex;
+        flex-direction: column;   
+        align-items: start;
+        padding-left: 5em;
+        height: 330px;
+     }
+
+     .section-1 h2{
+        margin-left: -1.5em;
+     }
+
+     .section-1 p{
+        width: 330px;
+        height: 50px;
+        text-align: start;
+     }
+
+    .images{
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .section-1 .imgs{
+        width: 195px;
+        height: 149px;
+    }
+    
+    .imgs {
+        width: 95px;
+        height: 400px;
+     }
+
+    .hide-imgs, .hidei-imgs{
+        display: block;
+        width: 195px;
+        height: 149px;
+     }
+
+     .hide-imgs{
+        position: relative;
+        top: 4.5em;
+     }
+
+     main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 4em;
+     }
+
+     main div{
+        flex: 0;
+     }
+
+     .section-2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        align-items: start;
+     }
+
+     .section-2 p{
+       width: 605px;
+       margin-left: -0.5em;
+     }
+
+     .section-3, .section-4{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-right: 8em;
+     }
+
+     .section-3 p, .section-4 p{
+        text-align: start;
+     }
+
+}
+
+@media screen  and (min-width: 1440px){
+
+    .section-1{
+        flex-direction: row;
+        padding-left: 175px;
+        padding-top: 130px;
+        height: 240px;
+    }
+
+    .images{
+       flex-direction: column;
+       margin-left: 6em;
+    }
+
+    .hide-imgs{
+        position: relative;
+        top: -2em;
+     }
+
+     .hidei-imgs{
+        position: relative;
+        left: 13.5em;
+        top:-17.5em ;    
+     }
+
+     main{
+        flex-wrap: unset;
+     }
+
+     .section-2{
+        margin-left: 6.5em;
+     }
+
+     .section-2 p{
+        width: 305px;
+        text-align: start;
+        margin-left: -0.1em;
+     }
+
+     .section-3{
+        padding-right: 15em;
+     }
+
+     .section-4{
+        position: relative;
+        left: -19em;
+     }
+}
